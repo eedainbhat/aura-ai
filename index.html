@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <h3 class="nav-logo"><i class="fa-brands fa-artstation nav-logo-icon"></i>aura ai</h3>
+    <ul class="nav-list">
+      <li id="nav-li-resources" class="nav-list-items">resources</li>
+      <li id="nav-li-pricing" class="nav-list-items">pricing</li>
+      <li id="nav-li-customers" class="nav-list-items">customers</li>
+      <li class="nav-list-items list-icon"><i class="fa-solid fa-list"></i></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <div class="video-container">
+      <video autoplay muted playsinline src="bg-vid.mp4" class="background-video">
+        Your browser does not support the video tag.
+      </video>
+      <div class="main-text-con">
+        <h1 class="main-text">think</h1>
+        <h1 class="main-text">imagine</h1>
+        <h1 class="main-text">create</h1>
+        <h3 class="main-text-info">Aura AI uses advanced neural networks to generate high-resolution videos,
+          images, many more with a single prompt</h3>
+        <button class="head-buttons" id="signin-btn">sign in</button>
+        <button class="head-buttons" id="start-demo-btn">try demo</button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section1">
+      <div class="bg-effect-sec1">
+        <div class="sec-info">features</div>
+        <div class="main-content">
+          <div id="img-feature" class="features">
+            <h2 class="feature-name">create images</h2>
+            <p class="feature-detail">Eliminate the bottleneck of manual design. Aura AI transforms text prompts into
+              production-ready marketing assets, social media content, and custom illustrations instantly. By leveraging
+              state-of-the-art diffusion models, our generator provides limitless variations tailored to your specific
+              aesthetic. Scale your brand’s visual output without the overhead of traditional photography or expensive
+              stock licenses</p>
+          </div>
+          <div id="vid-feature" class="features">
+            <h2 class="feature-name">create videos</h2>
+            <p class="feature-detail">Bring your stories to life with the click of a button. Aura Video transforms
+              static
+              concepts into cinematic motion, using advanced temporal consistency to ensure every frame flows perfectly
+              into
+              the next. From breathtaking landscape pans to intricate character movements, our AI understands the
+              physics
+              of
+              light and motion to create high-definition footage that rivals a professional film crew. No cameras, no
+              actors—just pure digital magic</p>
+          </div>
+          <div id="text-speech-feature" class="features">
+            <h2 class="feature-name">text to speech</h2>
+            <p class="feature-detail">Give your brand a voice that truly resonates. Aura’s Text-to-Speech technology
+              goes
+              beyond simple narration, utilizing neural speech synthesis to capture the subtle nuances of human emotion,
+              tone, and pacing. Whether you need an enthusiastic pitch for a social media ad or a calm, professional
+              guide
+              for an e-learning module, Aura delivers lifelike audio that builds trust and keeps your audience engaged.
+              Transform any script into a premium voiceover without ever stepping into a recording studio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="sec-info">Experience the Power of Generative Art</div>
+      <div class="demo-container">
+        <p class="demo-para">Start creating with 10 free daily credits. No credit card required—explore our creative
+          ecosystem for free and upgrade to Pro whenever you're ready for unlimited high-resolution exports and
+          commercial rights</p>
+        <div class="img-creation-demo">
+          <img src="img-feature.jpg" alt="try refreshing the page" class="demo-img">
+          <span class="search-ele">
+            <input type="text" placeholder="create imgaes" class="demo-input">
+            <button class="search-btn-demo">create</button>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="sec-info">choose your plan</div>
+      <div class="plans-container">
+        <div id="free-plan" class="plan-card">
+          <div class="plan-price">$4/month</div>
+          <div>
+            <div class="plan-price-info">most flexible</div>
+            <ul class="plan-details">
+              <list class="plan-details-li">10 image generation credits per month</list>
+              <list class="plan-details-li">unlimited text to speech credits</list>
+              <list class="plan-details-li">no video generation availale</list>
+              <list class="plan-details-li">for non-commercial use only</list>
+            </ul>
+          </div>
+        </div>
+        <div id="pro-plan" class="plan-card">
+          <div class="plan-price">$9/month</div>
+          <div>
+            <div class="plan-price-info">popular</div>
+            <ul class="plan-details">
+              <list class="plan-details-li">unlimited credits for image genration</list>
+              <list class="plan-details-li">20 video generation credits per month</list>
+              <list class="plan-details-li">unlimited credits for text to speech</list>
+              <list class="plan-details-li">commercial usen included</list>
+            </ul>
+          </div>
+        </div>
+        <div id="ultimate-plan" class="plan-card">
+          <div class="plan-price">$64/year</div>
+          <div>
+            <div class="plan-price-info">only $5/month</div>
+            <ul class="plan-details">
+              <list class="plan-details-li">unlimited credits for image genration</list>
+              <list class="plan-details-li">unlimited credits for video genration</list>
+              <list class="plan-details-li">unlimited credits for text to speech</list>
+              <list class="plan-details-li">commercial usen included</list>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="sec-info">about us</div>
+      <div class="aboutus-container">
+        <ul class="aboutus-list">
+          <li id="purpose-li" class="aboutus-li-items">
+            the purpose
+          </li>
+          <li id="founder-li" class="aboutus-li-items">
+            founder
+          </li>
+          <li id="portfolio-li" class="aboutus-li-items">
+            portfolio
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="blured-bg">
+      <div class="info-container">
+        <p class="info-para">gygygy</p>
+        <div class="info-content"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shery.js"></script>
+</body>
+
+</html>
