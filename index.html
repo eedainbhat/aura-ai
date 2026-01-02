@@ -21,14 +21,28 @@
 
 <body>
   <nav class="nav-bar">
-    <h3 class="nav-logo"><i class="fa-brands fa-artstation nav-logo-icon"></i>aura ai</h3>
+    <h3 class="nav-logo"><i class="fa-brands fa-artstation nav-logo-icon"></i>
+      <p id="nav-logo-name">aura ai</p>
+      <p class="credits-amount"></p>
+    </h3>
     <ul class="nav-list">
-      <li id="nav-li-resources" class="nav-list-items">resources</li>
-      <li id="nav-li-pricing" class="nav-list-items">pricing</li>
-      <li id="nav-li-customers" class="nav-list-items">customers</li>
+      <li class="nav-list-items nav-li-resources">resources</li>
+      <li class="nav-list-items nav-li-pricing">pricing</li>
+      <li class="nav-list-items nav-li-customers">customers</li>
       <li class="nav-list-items list-icon"><i class="fa-solid fa-list"></i></li>
     </ul>
   </nav>
+
+  <div class="hidden-ul-header-cont">
+    <ul class="list-ul-header">
+      <li class="list-li-headers purpose-li">purpose</li>
+      <li class="list-li-headers founder-li">founder</li>
+      <li class="list-li-headers portfolio-li">portfolio</li>
+      <li class="list-li-headers nav-li-resources">resources</li>
+      <li class="list-li-headers nav-li-pricing">pricing</li>
+      <li class="list-li-headers nav-li-customers">customers</li>
+    </ul>
+  </div>
 
   <header class="header">
     <div class="video-container">
@@ -49,7 +63,7 @@
   <main class="main">
     <section class="section1">
       <div class="bg-effect-sec1">
-        <div class="sec-info">features</div>
+         <div class="sec-info">features</div>
         <div class="main-content">
           <div id="img-feature" class="features">
             <h2 class="feature-name">create images</h2>
@@ -92,6 +106,7 @@
           commercial rights</p>
         <div class="img-creation-demo">
           <img src="img-feature.jpg" alt="try refreshing the page" class="demo-img">
+          <p class="processing-req"></p>
           <span class="search-ele">
             <input type="text" placeholder="create imgaes" class="demo-input">
             <button class="search-btn-demo">create</button>
@@ -102,7 +117,7 @@
     <section class="section3">
       <div class="sec-info">choose your plan</div>
       <div class="plans-container">
-        <div id="free-plan" class="plan-card">
+        <div id="pro-plan" class="plan-card">
           <div class="plan-price">$4/month</div>
           <div>
             <div class="plan-price-info">most flexible</div>
@@ -114,15 +129,15 @@
             </ul>
           </div>
         </div>
-        <div id="pro-plan" class="plan-card">
+        <div id="premium-plan" class="plan-card">
           <div class="plan-price">$9/month</div>
           <div>
-            <div class="plan-price-info">popular</div>
+            <div id="p-p-i-popular" class="plan-price-info">popular</div>
             <ul class="plan-details">
-              <list class="plan-details-li">unlimited credits for image genration</list>
+              <list class="plan-details-li">unlimited credits for image generation</list>
               <list class="plan-details-li">20 video generation credits per month</list>
               <list class="plan-details-li">unlimited credits for text to speech</list>
-              <list class="plan-details-li">commercial usen included</list>
+              <list class="plan-details-li">commercial use included</list>
             </ul>
           </div>
         </div>
@@ -131,10 +146,10 @@
           <div>
             <div class="plan-price-info">only $5/month</div>
             <ul class="plan-details">
-              <list class="plan-details-li">unlimited credits for image genration</list>
-              <list class="plan-details-li">unlimited credits for video genration</list>
-              <list class="plan-details-li">unlimited credits for text to speech</list>
-              <list class="plan-details-li">commercial usen included</list>
+              <li class="plan-details-li">unlimited credits for image generation</li>
+              <li class="plan-details-li">unlimited credits for video generation</li>
+              <li class="plan-details-li">unlimited credits for text to speech</li>
+              <li class="plan-details-li">commercial use included</li>
             </ul>
           </div>
         </div>
@@ -144,13 +159,13 @@
       <div class="sec-info">about us</div>
       <div class="aboutus-container">
         <ul class="aboutus-list">
-          <li id="purpose-li" class="aboutus-li-items">
+          <li class="aboutus-li-items purpose-li">
             the purpose
           </li>
-          <li id="founder-li" class="aboutus-li-items">
+          <li class="aboutus-li-items founder-li">
             founder
           </li>
-          <li id="portfolio-li" class="aboutus-li-items">
+          <li class="aboutus-li-items portfolio-li">
             portfolio
           </li>
         </ul>
@@ -158,12 +173,13 @@
     </section>
     <div class="blured-bg">
       <div class="info-container">
-        <p class="info-para">gygygy</p>
+        <p class="info-para"></p>
         <div class="info-content"></div>
       </div>
     </div>
+    <p id="disclaimer-para"> This is a fictional project created for learning and portfolio purposes. No real payments or AI services are involved.</p>
   </main>
-
+ 
   <script src="script.js"></script>
   <script src="shery.js"></script>
 </body>
